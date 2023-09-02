@@ -1,6 +1,4 @@
-package hw2.src;
-
-import java.util.Scanner;
+import java.util.Scanner; // imports scanner
 
 public class ClassAverage {
 	public static void main(String[] args) {
