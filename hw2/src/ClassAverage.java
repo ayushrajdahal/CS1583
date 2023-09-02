@@ -37,6 +37,18 @@ public class ClassAverage {
 
 		}
 
+		if (classAvg >= 90) { // grading system
+			grade = "A";
+		} else if (classAvg >= 80) {
+			grade = "B";
+		} else if (classAvg >= 70) {
+			grade = "C";
+		} else if (classAvg >= 50) {
+			grade = "D";
+		} else {
+			grade = "E";
+		}
+
 		System.out.printf("Your class average was %.2f (%s) with a total of %d grades entered.", classAvg, grade,
 				counter); // final output
 
