@@ -28,9 +28,9 @@ public class ClassAverage {
 			inputNum = scanner.nextInt(); // takes number input from user
 
 			if (inputNum >= 0) { // only executes this block of code if input is a positive number
-				sumNum += (float) inputNum;
-				counter += 1;
-				classAvg = sumNum / ((float) counter);
+				sumNum += (float) inputNum; // adds inputNum to sumNum and stores it in sumNum
+				counter++; // adds 1 to counter
+				classAvg = sumNum / ((float) counter); // divides sumNum by counter and stores it in classAvg
 			} else {
 				break; // breaks out of the loop if negative number is provided
 			}
