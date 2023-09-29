@@ -19,4 +19,14 @@ public class SumOfDigits {
 
         return sum;
     }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); // creates a scanner object
+
+        int inputNum = scanner.nextInt(); // input numbrt
+
+        System.out.println(digitSum(inputNum)); // calls the digitSum function on inputNum and prints it out
+
+        scanner.close(); // closes scanner object
+    }
 }

@@ -10,3 +10,16 @@ Write a program that calculates the sum of all individual digits in a given posi
 $ javac SumOfDigits.java
 $ java SumOfDigits
 ```
+
+### Example output
+
+```
+52
+7
+
+538
+7
+
+12345
+6
+```
