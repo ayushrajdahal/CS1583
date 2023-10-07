@@ -1,7 +1,5 @@
-import java.util.Scanner;
-import java.util.Random;
 import java.lang.Math;
-import java.util.Arrays;
+import java.util.*;
 
 public class RandomGuesser {
 
@@ -55,7 +53,7 @@ public class RandomGuesser {
 		int max_guesses = scanner.nextInt();
 
 		int temp;
-		int[] previous_guesses = new int[5];
+		List<Integer> prev_guesses = new ArrayList<>();
 
 		// to make sure max is max and min is min
 
@@ -84,15 +82,18 @@ public class RandomGuesser {
 			System.out.println("Guess a number:");
 			int anumber = scanner.nextInt();
 
-			if (previous_guesses.con) {
-
+			if (prev_guesses.contains(anumber)) {
+				System.out.println("DUPLICATE GUESS");
+				i--;
 			} else if (anumber == generated_number) {
 				System.out.println("CORRECT");
 				guessGrading(max_boundary, min_boundary, i + 1, true);
 			} else if (anumber < generated_number) {
 				System.out.println("HIGHER");
+				prev_guesses.add(anumber);
 			} else {
 				System.out.println("LOWER");
+				prev_guesses.add(anumber);
 			}
 		}
 		guessGrading(max_boundary, min_boundary, max_guesses, false);
