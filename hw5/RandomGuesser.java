@@ -96,6 +96,7 @@ public class RandomGuesser {
 				prev_guesses.add(anumber);
 			}
 		}
+		System.out.println("Sorry, the right answer was " + generated_number + ".");
 		guessGrading(max_boundary, min_boundary, max_guesses, false);
 		scanner.close();
 	}
