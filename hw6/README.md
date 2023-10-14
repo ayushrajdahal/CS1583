@@ -1,0 +1,30 @@
+# Homework 6
+
+## How to run
+
+```zsh
+javac HugeIntegerTest.java
+java HugeIntegerTest
+```
+
+Example Output:
+
+```
+Initializing HugeInteger A and B:
+
+A = 12345678901234567890123456789
+B = 987654321098765432109876543
+
+Testing methods:
+
+A + B = 13333333222333333322233333332
+A - B = 12345678901234567890123456789
+A == B: false
+A > B: true
+A >= B: true
+A < B: false
+A <= B: false
+A * B = 12193263113702179522618503270769699763964487123185200427
+A / B = 12345678901234567890123456789
+A % B = 493827048049382704804938273
+```
